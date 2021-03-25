@@ -1,0 +1,60 @@
+body {
+    background-color:black;
+    color: white;
+}
+.profile-list{
+    display: flex;
+    margin-bottom: 250px;
+}
+.each{
+    margin-left: 20px;
+    margin-right: 50px;
+}
+.each a{
+    text-decoration: none;
+    color: white;
+    margin-right: 50px;
+}
+
+.span{
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+    
+
+#Basic-Info{
+    border: 4px solid white;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Likes{
+    border: 4px solid white;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#TMIs{
+    border: 4px solid white;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.llikes{
+    display:flex;
+    
+}
+
+.likee{
+    margin-right: 20px;
+}
