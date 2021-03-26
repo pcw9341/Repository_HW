@@ -1,0 +1,129 @@
+.inswrapper{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+    
+
+.header{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    border: 1px solid grey;
+    height: 60px;
+    width:400px;
+}
+.logo{
+    height:30px;
+    width:110px;
+    margin-top:10px;
+}
+.icon{
+    height:30px;
+    width:30px;
+    margin-left:10px;
+}
+.second-box{
+    display:flex;
+    flex-direction:column;
+    height: 320px;
+    width:400px;
+    border: 1px solid grey;
+}
+.profile{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height: 120px;
+    width:400px;
+}
+.pleft{
+    height: 120px;
+    width:120px;
+}
+.profilei{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.pright{
+    height: 120px;
+    width:280px;
+}
+.pright-1{
+    display:flex;
+    justify-content:left;
+    align-items:center;
+    height:75px;
+    width:280px;
+}
+.pname{
+    font-weight:lighter;
+}
+.pimg{
+    height:30px;
+    width:30px;
+    margin-left:20px;
+}
+.pright-2{
+    display:flex;
+    justify-content:left;
+    align-items: center;
+    height:45px;
+    width:280px;
+}
+.pbox{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:30px;
+    width:250px;
+    border: 1px solid grey;
+    opacity:40%;
+    border-radius:8px;
+}
+.pboxl{
+    font-weight:400px;
+}
+
+.info{
+    height: 110px;
+    width:400px;
+    border: 1px solid grey;
+}
+.highlight{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:left;
+    height: 90px;
+    width:400px;
+    border: 1px solid grey;
+}
+.statics{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    height: 80px;
+    width:400px;
+    border: 1px solid grey;
+}
+.statics.set{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.feed-icons{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    height: 60px;
+    width:400px;
+    border: 1px solid grey;
+}
+.feed-pic{
+    height: 250px;
+    width:400px;
+    border: 1px solid grey;
+}
