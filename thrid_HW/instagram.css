@@ -27,7 +27,7 @@
 .second-box{
     display:flex;
     flex-direction:column;
-    height: 320px;
+    height: 340px;
     width:400px;
     border: 1px solid grey;
 }
@@ -87,32 +87,70 @@
 }
 
 .info{
+    display:flex;
+    flex-direction:column;
     height: 110px;
     width:400px;
-    border: 1px solid grey;
+    margin-bottom:10px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.info h4 {
+    margin: 0 0 0px;
+}
+.info h5 {
+    margin: 5px 3px;
 }
 .highlight{
     display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:left;
+    justify-content:left;
     height: 90px;
     width:400px;
-    border: 1px solid grey;
+    box-sizing: border-box;
+    padding-left: 10px;
+    
+}
+.circle{
+    /* display: flex;
+    flex-direction:column;
+    justify-content:center; */
+    padding: 5px;
+    
+}
+.circle img{
+    border-radius:50px;
+    width:60px;
+    height:60px;
+}
+.circle span{
+    font-size: 5px;
+    margin-left:20px;
 }
 .statics{
     display:flex;
     justify-content:space-around;
     align-items:center;
-    height: 80px;
+    height: 60px;
     width:400px;
     border: 1px solid grey;
 }
-.statics.set{
+.set{
     display:flex;
     flex-direction:column;
-    justify-content:center;
+    justify-content:space-between;
     align-items:center;
+    height: 40px;
+    
+    
+}
+.set-description{
+    margin: 0;
+    color:grey;
+}
+.hnum{
+    margin: 0;
+    text-align: center;
 }
 .feed-icons{
     display:flex;
@@ -121,9 +159,25 @@
     height: 60px;
     width:400px;
     border: 1px solid grey;
+    background-color: whitesmoke;
 }
 .feed-pic{
-    height: 250px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+    height: 260px;
     width:400px;
     border: 1px solid grey;
+    margin: 0px;
+}
+.feed-pic img{
+    height: 124px;
+    width: 124px;
+}
+.feed-pic-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
 }
