@@ -6,10 +6,12 @@ def func(num):
         for i in range(1,5):
             for j in range(1,10):
                 print(f"{2*i} * {j} = {(2*i)*j}")
+            print("***********************")
     else:
         for i in range(1,5):
             for j in range(1,10):
                 print(f"{2*i+1} * {j} = {(2*i+1)*j}")
+            print("***********************")
 func(num)
 
 
