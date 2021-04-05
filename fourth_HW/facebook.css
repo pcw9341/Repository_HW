@@ -1,5 +1,6 @@
 body{
     background-color:rgb(218, 221, 225);
+    margin: 0px 0px 8px 8px;
 }
 .header{
     display:flex;
@@ -88,7 +89,7 @@ body{
     display:flex;
     flex-direction:column;
     background-color:white;
-    height: 200px;
+    height: 210px;
     width: 100%;
     padding:0px 7px;
     margin:9px;
@@ -98,6 +99,7 @@ body{
     display:flex;
     align-items:center;
     justify-content: space-between;
+    padding-bottom:7px;
 }
 .s1{
     margin-top:5px;
@@ -109,9 +111,193 @@ body{
     font-weight:lighter;
     font-size:14px;
 }
-.story-body img{
+.story-body{
+    display:flex;
+    justify-content: space-between;
+    overflow-x:scroll;
+    overflow-y:hidden;
+    border:2400px;
+    position:relative;
+    height:100%;
+}
+.first-body {
+    width: 95px;
+    
+}
+.first-body img{
     height:160px;
     width: 90px;
     border-radius:18px;
     margin-top:5px;
+    position: absolute;
+    /* color: linear-gradient(black,white); */
+}
+.small-items{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items:left;
+    position:relative;
+    margin:7px 50px 0px 0px;
+    padding: 5px 5px 5px 7px;
+    height:130px;
+}
+.fsmall-prof{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height:35px;
+    width:35px;
+    border-radius:25px;
+    background-color: white;
+    position:absolute;
+}
+.fsmall-prof span{
+    font-size:30px;
+    color:blue;
+    opacity:50%;
+    font-weight: bolder;
+    margin-bottom:8px;
+    
+}
+/* 원정가운데에 글자 넣는 방법 */
+
+.story-name{
+    color:white;
+    font-size:12px;
+    font-weight:bold;
+    min-width:50px;
+    max-width:60px;
+    
+    margin-top:125px;
+    position:relative;
+}
+.small-prof{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height:35px;
+    width:35px;
+    position:absolute;
+}
+.small-prof img{
+    height:35px;
+    width:35px;
+    border-radius:25px;
+    border: #3b5998 4px solid;
+    position: absolute;
+}
+.feed{
+    display:flex;
+    flex-direction: column;
+    background-color:white;
+    height: 650px;
+    width: 100%;
+    padding:0px 7px;
+    margin:9px;
+    position:relative;
+    
+}
+.feed-in{
+    padding:5px;
+}
+.feed-intro{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.feed-intro-pic{
+    height:40px;
+    width:40px;
+    border-radius:25px;
+}
+.feed-intro-name{
+    padding-right:150px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.big-name{
+    font-size:smaller;
+}
+.feed2{
+    display:flex;
+    align-items:center;
+    padding:0px;
+}
+.time{
+    font-size:13px;
+    color:grey;
+}
+.earth{
+    width:30px;
+    height:20px;
+    padding-top:8px;
+}
+.feed-intro-more{
+    font-size:30px;
+    font-weight:30px;
+    padding-bottom: 30px;
+}
+.feed-body p{
+    color:grey;
+}
+.likes{
+    display:flex;
+    padding-top:10px;
+}
+.lowest{
+    display:flex;
+    border-top:rgb(146, 144, 144) solid 1px;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 6px;
+}
+.lowest-likes{
+    display:flex;
+    align-items: center;
+}
+.lowest-comment{
+    display:flex;
+    align-items: center;
+}
+.lowest-share{
+    display:flex;
+    align-items: center;
+}
+.lowest span{
+    color:rgb(80, 78, 78);
+    font-size:14px;
+    font-weight:bolder;
+}
+.feedf{
+    display:flex;
+    flex-direction: column;
+    background-color:white;
+    height: 560px;
+    width: 100%;
+    padding:0px 7px;
+    margin:9px;
+    position:relative;
+}
+.four-images{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:375px;
+    margin-top:7px;
+}
+.each-img{
+    height:180px;
+    width:180px;
+    padding:2px;
+}
+.row{
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
