@@ -1,0 +1,14 @@
+body{
+    font-weight:bolder;
+    color:rgba(0, 0, 0, 0.589);
+    margin-left: 15px;
+}
+.box{
+    border:rgba(0, 0, 0, 0.589) solid 2px;
+    height: 600px;
+    width: 600px;
+}
+.ans{
+    font-weight:bolder;
+    color:orangered;
+}

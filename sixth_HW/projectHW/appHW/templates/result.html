@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {%	load	static	%}
+    <link rel="stylesheet" type="text/css" href="{%	static	'result.css'	%}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>입력한 텍스트: 
+        <br/>
+        <div class="box">
+        <span class="ans">{{text}}</p></div></p>
+    <p>공백 포함 <span class="ans">{{total_len}}</span> 자</p>
+    <p>공백 제외 <span class="ans">{{no_blank_len}}</span> 자</p>
+    <p>단어 <span class="ans">{{word_count}}</span> 개</p>
+</body>
+</html>
