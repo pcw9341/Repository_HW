@@ -1,0 +1,48 @@
+*{
+    display:flex;
+    box-sizing:border-box;
+    flex-direction:column;
+    background-color:wheat;
+}
+
+.body{
+    justify-content: center;
+    align-items: center;
+
+}
+.h1{
+    font-size:50px;
+}
+.container{
+    border:2px solid black;
+    justify-content: center;
+    align-items:center;
+    padding:10px;
+    border-radius:15px;
+    
+}
+.item{
+    border:2px solid black;
+    border-radius:15px;
+    width: 400px;
+    height: 100px;
+    margin: 0px 0px 15px 0px;
+    background-color:whitesmoke;
+}
+.title{
+    margin:20px 0px 0px 20px;
+    color: black;
+    background-color:whitesmoke;
+    font-size:larger;
+    font-weight:bolder;
+}
+.deadline{
+    margin:10px 0px 0px 20px;
+    background-color:whitesmoke;
+}
+
+.add{
+    color:black;
+    font-size:larger;
+    font-weight:bolder;
+}

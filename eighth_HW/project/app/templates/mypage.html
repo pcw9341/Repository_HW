@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block css %} {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'mypage.css' %}">
+    {% endblock %}
+
+    {% block content %}
+    
+    <body class="body">
+        <h1 class="h1">My-tasks</h1>
+        <div>
+            <ul class="container">
+                {%for post in posts %}
+                <li class="item">
+                    <a class="title" href="{% url 'detail' post.pk %}">{{post.title}}</a>
+                    <p class="deadline">due date: {{post.deadline}}</p>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <a class="add" href="{% url 'new' %}">일정 추가</a>
+        <div>
+            <h1 class="h1">My-comments</h1>
+            <ul class="container">
+                {%for comment in comments %}
+                <li class="item">
+                    <a class="title">{{comment.content}}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </body>
+   
+    {% endblock %}

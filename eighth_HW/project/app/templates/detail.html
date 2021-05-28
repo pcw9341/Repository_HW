@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% extends 'base.html' %}
+        {% block css %} {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'detail.css' %}">
+    {% endblock %}
+</head>
+{% block content %}
+<body>
+    <div>
+        <h2>작성자</h2>
+        <p class="deadline">{{post.author}}</p>
+    </div>
+    <div>
+        <h2>일정</h2>
+        <p>{{post.title}}</p>
+    </div>
+    <div>
+        <h2>세부사항</h2>
+        <p>{{post.content}}</p>
+    </div>
+    <div>
+        <h2>마감기한</h2>
+        <p class="deadline">{{post.deadline|date:'Y-m-d'}}</p>
+    </div>
+    
+    <div class="a">
+    <a href="{% url 'home' %}">홈으로</a>
+    {% if user.is_authenticated and post.author.pk == user.pk %}
+    <a href="{% url 'edit' post.pk %}">수정하기</a>
+    <a href="{% url 'delete' post.pk %}">삭제하기</a>
+    {% endif %}
+    </div>
+
+    {% if user.is_authenticated %}
+    <form method="POST">
+        {% csrf_token %}
+        <div class="comment">---------------------------댓글달기---------------------------</div>
+        <div class="comment_content">
+            <input type="text" id="content" name="content" placeholder="댓글을 입력해주세요">
+            <button type="submit">등록</button>
+        </div>    
+    </form>
+    <button id="like-button" onclick="changeColor()">좋아요</button>
+    {% endif %}
+
+    <script>
+        function changeColor() {
+            document.getElementsByTagName('button').style.backgroundColor="red";
+        }
+
+        
+    </script>
+
+
+
+    {% for comment in post.comments.all %}
+    <li class= "comment_content"><div class="p">{{comment.author}}:{{comment.content}}</div>
+    {% if user.is_authenticated and post.author.pk == user.pk %}
+    <a  href="{% url 'delete_comment' post.pk comment.pk %}">삭제</a></li>
+    {% endif %}
+    {% endfor %}
+    
+</body>
+{% endblock %}
+</html>

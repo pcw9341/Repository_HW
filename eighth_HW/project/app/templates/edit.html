@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    {% extends 'base.html' %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block css %} {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'edit.css' %}">
+    {% endblock %}
+</head>
+{% block content %}
+<body>
+    <form action="" method="post">
+        {% csrf_token %}
+        <div>
+            <label for="title">일정</label>
+            <input type="text" id="title" name="title" value="{{post.title}}">
+        </div>
+        <div>
+            <label for="content">세부사항</label>
+            <textarea name="content" id="content" cols="30" rows="10">{{post.content}}</textarea>
+        </div>
+        <div>
+            <label for="deadline">마감기한</label>
+            <input type="date" id="deadline" name="deadline" value="{{post.deadline}}">
+        </div>
+        <button type="submit">수정하기</button>
+    </form>
+</body>
+{% endblock %}
+</html>

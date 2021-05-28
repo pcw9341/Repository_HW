@@ -112,10 +112,13 @@
     
 }
 .circle{
-    /* display: flex;
+    display: flex;
     flex-direction:column;
-    justify-content:center; */
-    padding: 5px;
+    justify-content:space-between;
+    margin-bottom:10px;
+    align-items:center;
+    /* 이렇게 쓰고나서 둘 사이 간격만 좁히면 되는거 아닌가...? 그리고 밑에 글씨를 사진 중앙에다가 놓을 수도 있나? */
+    
     
 }
 .circle img{
@@ -125,7 +128,7 @@
 }
 .circle span{
     font-size: 5px;
-    margin-left:20px;
+    
 }
 .statics{
     display:flex;
