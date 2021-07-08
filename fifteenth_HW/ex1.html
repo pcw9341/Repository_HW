@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex1.css">
+    <title>Awesome</title>
+</head>
+<body>
+    <div id="myDIV" class="header">
+        <h2>Awesome To Do List</h2>
+        <div class="inputBox">
+            <input type="text" id="myInput" placeholder="Title...">
+            <button onclick="newElement()" class="addBtn">Add</button>
+        </div>
+    </div>
+      
+    <ul id="myUL">
+        <li>
+            <span>Happy Coding :)</span>
+            <span class="close">&#215;</span>
+        </li>
+    </ul>
+
+    <br><br>
+    <button onclick = "myFunction()">다크 모드</button>
+    <button id="myBtn">응원해줘</button>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>짜란다짜란다짜란다~!</p>
+        </div>
+    </div>
+   
+</body>
+<script src="ex1.js"></script>
+</html>
